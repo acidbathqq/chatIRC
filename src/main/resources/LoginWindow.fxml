@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginControllerImpl">
+   <children>
+      <TextField fx:id="portTextField" layoutX="387.0" layoutY="294.0" prefHeight="26.0" prefWidth="240.0" promptText="Port" style="-fx-alignment: center;" text="2551" />
+      <Button fx:id="loginButton" layoutX="287.0" layoutY="399.0" mnemonicParsing="false" onAction="#pressLoginButton" prefHeight="55.0" prefWidth="127.0" text="Login">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Text fill="#f88484" layoutX="403.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port" textAlignment="CENTER" wrappingWidth="206.78271484375">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextField fx:id="nicknameTextField" layoutX="39.0" layoutY="294.0" prefHeight="26.0" prefWidth="274.0" promptText="Enter your nickname for chatting" />
+      <Text layoutX="72.0" layoutY="267.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nickname" textAlignment="CENTER" wrappingWidth="206.78271484375">
+         <effect>
+            <InnerShadow />
+         </effect>
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Text>
+      <TextArea editable="false" layoutX="32.0" layoutY="34.0" prefHeight="107.0" prefWidth="662.0" text="                               IRC Chat &#10;    based on Akka Typed + Scala + JavaFX ">
+         <font>
+            <Font size="27.0" />
+         </font>
+         <effect>
+            <Lighting>
+               <bumpInput>
+                  <Shadow />
+               </bumpInput>
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </TextArea>
+   </children>
+</AnchorPane>
